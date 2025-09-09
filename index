@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Pidañapumple</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fff8f0;
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            color: #ff69b4;
+        }
+
+        input {
+            padding: 10px;
+            width: 300px;
+            margin: 10px;
+            border: 2px solid #ff69b4;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #e0559a;
+        }
+
+        .error {
+            color: red;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Pidañapumple</h1>
+
+    <p>1. ¿Dónde nos conocimos?</p>
+    <input type="text" id="respuesta1" placeholder="Escribe tu respuesta">
+
+    <p>2. ¿Qué quiero contigo a futuro?</p>
+    <input type="text" id="respuesta2" placeholder="Escribe tu respuesta">
+
+    <br><br>
+    <button onclick="verificarRespuestas()">Enviar</button>
+
+    <p class="error" id="mensajeError"></p>
+
+    <script>
+        function verificarRespuestas() {
+            const r1 = document.getElementById("respuesta1").value.trim().toLowerCase();
+            const r2 = document.getElementById("respuesta2").value.trim().toLowerCase();
+
+            if (r1 === "conalep" && r2 === "una familia") {
+                window.location.href = "felicidades.html";
+            } else {
+                document.getElementById("mensajeError").textContent = "Ups 😅, alguna respuesta no es correcta. Intenta de nuevo.";
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Felicidades</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fff0f5;
+            text-align: center;
+            padding: 50px;
+            color: #d63384;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🎉 Felicidades corazón 🎉</h1>
+    <p>Hoy es tu pumple mi vida hermosa 🥰</p>
+    <p>Y justo eso es lo que quiero contigo...</p>
+    <p><strong>Una hermosa familia 💖</strong></p>
+
+</body>
+</html>
